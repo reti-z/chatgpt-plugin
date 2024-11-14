@@ -9,9 +9,7 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://your-server.com/.well-known/openapi.json"
+    "url": "https://github.com/reti-z/chatgpt-plugin/blob/main/openapi.json"
   },
-  "logo_url": "https://your-server.com/logo.png",
-  "contact_email": "support@your-domain.com",
-  "legal_info_url": "https://your-domain.com/legal"
+  "logo_url": "https://github.com/reti-z/chatgpt-plugin/blob/main/pngegg-logo.png"
 }
