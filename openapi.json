@@ -1,0 +1,40 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "IDX Financial Report API",
+    "version": "1.0.0",
+    "description": "API untuk mengunduh laporan keuangan dari situs IDX."
+  },
+  "paths": {
+    "/download-report": {
+      "get": {
+        "summary": "Unduh laporan keuangan",
+        "description": "Mengambil file laporan keuangan dalam format .xlsx dari situs IDX.",
+        "parameters": [
+          {
+            "name": "year",
+            "in": "query",
+            "required": true,
+            "description": "Tahun laporan",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Berhasil mengunduh file",
+            "content": {
+              "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
