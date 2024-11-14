@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "IDX Financial Report Downloader",
+  "name_for_model": "idx_downloader",
+  "description_for_human": "Unduh laporan keuangan dari situs IDX dalam format .xlsx",
+  "description_for_model": "Plugin untuk mengunduh laporan keuangan dari situs IDX dalam format .xlsx.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://your-server.com/.well-known/openapi.json"
+  },
+  "logo_url": "https://your-server.com/logo.png",
+  "contact_email": "support@your-domain.com",
+  "legal_info_url": "https://your-domain.com/legal"
+}
